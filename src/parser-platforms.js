@@ -260,6 +260,17 @@ export default [
     },
   },
 
+  /* Slack */
+  {
+    test: [/slackbot/i, /slack-imgProxy/i],
+    describe() {
+      return {
+        type: PLATFORMS_MAP.bot,
+        vendor: 'Slack',
+      };
+    },
+  },
+
   /* Huawei */
   {
     test: [/huawei/i],
